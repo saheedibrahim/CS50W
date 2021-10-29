@@ -3,8 +3,19 @@
     <head>
         <title>Search</title>
         <style>
+            #btnlink {
+                text-align: right;
+            }
+            #links li {
+                list-style-type: none;
+                display: inline;
+            }
+            div {
+                display: relative;
+            }
             ul {
                 text-align: right;
+                display: absolute;
             }
              table{
                  border: blue solid 5px;
@@ -25,16 +36,16 @@
         </style>
     </head>
     <body>
-        <ul>
-            <li><a href="image.html">Image Search</a></li>
-            <li><a href="image.html">Image Search</a></li>
-        </ul>
-        <table>
-            <tr>
-                <td><a href="image.html">Image Search</a></td>
-                <td><a href="advance.html">Advance Search</a></td>
-            </tr>
-        </table>
+        <div>
+            <ul id="links">
+                <li><a href="image.html">Image Search</a></li>
+                <li><a href="advance.html">Advaned google Search</a></li>
+            </ul>
+        </div>
+        <div id="btnlink">
+        <button><a href="image.html">Image Search</a></button>
+        <button><a href="advance.html">Advaned google Search</a></button>
+        </div>
         <form action="https://google.com/search" id="search">
             <input type="text" name="q" class="search" ><br>
             <input type="submit" value="Google Search" class="search">
